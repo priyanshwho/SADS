@@ -1,0 +1,5 @@
+# Insert within the existing kapi.priyanshu.cv site block.
+redir /letter /letter/ 308
+handle_path /letter/* {
+    reverse_proxy 127.0.0.1:3097
+}

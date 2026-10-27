@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practical ideas for giving and community reuse.">
+  <title>The Good Letter</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="header"><a class="brand" href="./" aria-label="The Good Letter home"><span class="brand-mark" aria-hidden="true">✳</span> The Good Letter</a><a class="header-link" href="#signup">Sign up <span aria-hidden="true">↗</span></a></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="intro">
+        <p class="kicker"><span></span> A little more good, made practical</p>
+        <h1 id="title">Good things<br>find another life.</h1>
+        <p class="lead">Thoughtful ideas for giving, sharing, and making the most of what we already have.</p>
+        <p class="intro-note">The Good Letter is a newsletter about small actions that make a difference close to home.</p>
+        <div class="form-wrap" id="signup">
+          <h2>Get the letter</h2>
+          <p>Leave your email and choose what interests you.</p>
+          <form id="signup-form" novalidate>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="email-error">
+            <p class="error" id="email-error"></p>
+            <fieldset><legend>I'm interested in <span>(optional)</span></legend>
+              <div class="choices"><label><input type="checkbox" name="interests" value="giving"><span>Practical giving</span></label><label><input type="checkbox" name="interests" value="reuse"><span>Reuse ideas</span></label><label><input type="checkbox" name="interests" value="community"><span>Community stories</span></label></div>
+            </fieldset>
+            <label class="consent"><input type="checkbox" id="consent" required aria-describedby="consent-error"><span>I agree to receive The Good Letter by email.</span></label>
+            <p class="error" id="consent-error"></p>
+            <button type="submit">Save my subscription <span aria-hidden="true">↗</span></button>
+            <p class="privacy">Your email and selected interests are stored for this signup. No emails are sent by this demo.</p>
+            <p class="status" id="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <aside class="preview" aria-label="Sample newsletter">
+        <div class="preview-top"><span>A peek inside</span><span>Sample issue</span></div>
+        <div class="envelope"><div class="letter">
+          <div class="letter-head"><span class="mini-mark">✳</span><span>The Good Letter</span><span class="letter-date">A note for you</span></div>
+          <p class="letter-greeting">Hello, neighbor.</p>
+          <h2>A second life for<br>good things.</h2>
+          <p class="letter-copy">That jacket you no longer wear could be just what someone nearby needs. A little preparation goes a long way.</p>
+          <div class="tip"><span class="tip-icon" aria-hidden="true">✳</span><div><strong>Try this before you donate</strong><p>Wash, sort, and check items for damage. Ask your local organization what it can accept before you drop by.</p></div></div>
+          <div class="letter-bottom"><span>Keep good things going.</span><span aria-hidden="true">♡</span></div>
+        </div></div>
+        <p class="preview-caption">Useful ideas, made for real life. <span aria-hidden="true">✳</span></p>
+      </aside>
+    </section>
+  </main>
+  <footer><span>✳ &nbsp; The Good Letter</span><span>Good can start right where you are.</span></footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[Unit]
+Description=The Good Letter newsletter signup
+After=network.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+WorkingDirectory=/opt/good-letter
+ExecStart=/usr/bin/node /opt/good-letter/server.mjs
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3097
+Environment=DATA_PATH=/var/lib/good-letter/subscriptions.sqlite
+StateDirectory=good-letter
+StateDirectoryMode=0700
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target
