@@ -5,18 +5,18 @@
 <section class="page">
 <p class="meta">First assignment / Product engineer / 27 October 2026</p><h1>Product thinking,<br>made concrete.</h1>
 <p class="note">AI-assisted review draft. The source assignment requests independent work without AI assistance. This document is not represented as independently authored or ready for submission.</p>
-<h2>1. Candidate details</h2><table><tr><th style="width:30%">Field</th><th>Available information</th></tr>
-<tr><td>Name</td><td>Priyanshu. Confirm the full application name before submission.</td></tr>
-<tr><td>Phone</td><td>Not supplied. Required to produce the final filename.</td></tr>
-<tr><td>Email</td><td>priyanshu82711@gmail.com. From repository commit history; confirm this matches the application.</td></tr>
-<tr><td>LinkedIn</td><td>Not supplied. Do not infer a profile from the Git username.</td></tr>
+<h2>1. Candidate details</h2><table><tr><th style="width:30%">Field</th><th>Details</th></tr>
+<tr><td>Name</td><td>Priyanshu Anand</td></tr>
+<tr><td>Phone</td><td>+91 6205146659</td></tr>
+<tr><td>Email</td><td>priyanshu82711@gmail.com</td></tr>
+<tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/priyanswho/">https://www.linkedin.com/in/priyanswho/</a></td></tr>
 <tr><td>GitHub</td><td><a href="https://github.com/priyanshwho">github.com/priyanshwho</a></td></tr></table>
 <h2>2. Code change</h2><h3>Proposed commit message</h3><pre>Return -1 for non-integer inputs to multiplyByFive
 
 Check is_int before multiplying. Preserve multiplication for
 integer inputs and return -1 for other input types.</pre>
 <h3>Concerns and alternative</h3><p>The function now rejects numeric strings and floats that previously could be multiplied. That is a behavior change for existing callers. The meaning of <code>-1</code> must also be documented and checked by every caller.</p><p>I would first agree the input contract. If only integers are valid, I would prefer an integer parameter and strict typing at the caller, or explicit validation that throws <code>InvalidArgumentException</code>. This makes misuse visible instead of returning an ordinary integer sentinel.</p><p>The guard does not prevent overflow. A large integer multiplied by five can become a float, conflicting with the integer return type. I would validate the supported range and test zero, negatives, numeric strings, floats, null, and integer limits.</p>
-<p class="footer">1 / 4 · Commit identity from Git history: priyanshwho &lt;priyanshu82711@gmail.com&gt;.</p>
+<p class="footer">1 / 4 · Priyanshu Anand</p>
 </section>
 <section class="page"><p class="meta">Newsletter signup / Requirements before delivery</p><h2>3. Task approach</h2>
 <ol><li><strong>Clarify the outcome.</strong> Ask Sales who should subscribe, why they would want the newsletter, where traffic comes from, and how Sales will judge success. Define a completed signup before choosing a metric.</li>
@@ -30,7 +30,7 @@ integer inputs and return -1 for other input types.</pre>
 <p><strong>To:</strong> Sales team<br><strong>Subject:</strong> Inputs needed for the newsletter signup page</p>
 <p>Hi team,</p><p>I can start the newsletter signup page. To make the first version useful, could you help me confirm:</p>
 <ul><li>Who is the audience, what will subscribers receive, and how often?</li><li>Where will visitors find the page, and what result should we measure?</li><li>Which fields do you need beyond email? Please share approved copy, brand assets, and an example if you have one.</li><li>Which email platform or CRM should receive signups, and who can help with access and testing?</li><li>Should signup require email confirmation? Who approves consent, privacy, and unsubscribe wording?</li><li>What is the target launch date, and who gives final approval?</li></ul>
-<p>Could we have a 15-minute discussion tomorrow, or could you reply by tomorrow afternoon? Once we confirm the scope and integration, I will share a short implementation plan and delivery estimate. My proposed first version is an email field, explicit consent, clear validation, and a confirmation state.</p><p>Thanks,<br>Priyanshu</p>
+<p>Could we have a 15-minute discussion tomorrow, or could you reply by tomorrow afternoon? Once we confirm the scope and integration, I will share a short implementation plan and delivery estimate. My proposed first version is an email field, explicit consent, clear validation, and a confirmation state.</p><p>Thanks,<br>Priyanshu Anand</p>
 <p class="footer">2 / 4 · Draft communication only. No email has been sent.</p></section>
 <section class="page"><p class="meta">Browser assessment / Share At Door Step</p><h2>5. UI and UX assessment</h2>
 <p>Reviewed <a href="https://shareatdoorstep.com/donate/">shareatdoorstep.com/donate/</a> on 27 October 2026 in a desktop browser. Used the public Indiranagar, Bengaluru locality, selected Light Pickup, added one clothing item, and inspected scheduling. No donor identity, OTP, order, or payment was submitted.</p>

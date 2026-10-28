@@ -1,19 +1,21 @@
 # Ship check
 
-Date: 27 October 2026
+Date: 28 October 2026
 Branch: main
 Verdict: READY WITH WARNINGS
 
-The user authorized committing and pushing the completed application, assignment draft, deployment configuration, and verification artifacts.
+Scope: correct candidate details, refresh the four-page answer PDFs and affected screenshots, add the supplied resume under the required filename, and record a comparison against the original DOCX. The user requested committing and pushing this update after checking it.
 
-- API tests passed, including validation, duplicate handling, request limits, and persistence across restart.
-- JavaScript syntax checks passed for the server, client, UI checker, and PDF renderer.
-- Whitespace checks passed. A scan of the new text files found no credential patterns.
-- Browser verification previously passed at 320, 375, 768, and 1440 pixels, including network failure and retry. The deployed path also passed public HTTPS signup and restart persistence checks.
-- The four-page PDF was rendered and its layout inspected. Candidate details and resume still require completion.
-- No standalone lint, typecheck, or build commands apply to this dependency-free JavaScript app.
+- Candidate name, phone, email and GitHub match the supplied resume. LinkedIn uses the URL supplied directly by the user.
+- Email and name cells contain no explanatory text.
+- Both submission PDFs use the supplied phone's last four digits, 6659, and the full name Priyanshu Anand.
+- The renamed resume is byte-for-byte identical to the attachment.
+- The answer document has four pages; each of the six source questions has a corresponding answer.
+- The source code image was checked against the proposed commit message and code-review concerns.
+- The affected answer-page screenshots were visually inspected after rendering. Whitespace checks pass.
+- Application code and deployment configuration are unchanged in this update. API and browser checks from the prior implementation remain the recorded application validation; no application tests were repeated for document-only changes.
 
-Node 22 reports that node:sqlite is experimental. The app stores subscriptions but does not send emails. The answer document is an AI-assisted draft, as disclosed in the document.
+The source requests independent work without AI assistance and confidentiality. The answer remains disclosed as AI-assisted. The public-repository publication was approved by the user earlier; issuer permission cannot be inferred from that approval. The covering-email deadline and original LinkedIn application are unavailable. Donation-flow observations stop before verification and checkout, as disclosed.
 
 Commit identity: priyanshwho <priyanshu82711@gmail.com>.
-Proposed commit: Add: newsletter signup app, assignment answers and deployment
+Proposed commit: Update: candidate details, resume and assignment verification

@@ -36,7 +36,7 @@ This demo only saves signup data; it does not send mail. A production service ne
 
 ## Assignment materials
 
-`docs/` contains an AI-assisted assignment draft. The candidate must verify it before use. Phone number, LinkedIn profile, and resume details are missing and must never be invented.
+`docs/` contains an AI-assisted assignment draft. The candidate must verify it before use. Candidate contact details and the one-page resume were supplied by Priyanshu Anand. The resume contact details match the corrected candidate table.
 
 ## Review the deliverables
 
@@ -45,7 +45,7 @@ This demo only saves signup data; it does not send mail. A production service ne
 - `docs/fundraisers-schema.sql` is the proposed database design, separate from the newsletter app.
 - `artifacts/` contains screenshots from UI checks and print-layout inspection.
 
-The draft still needs the candidate's verified full name, phone number, LinkedIn URL, and resume. The required final filename is `{Last4DigitsOfPhoneNumber} - {YourName} - FirstAssignment - ProductEngineer.pdf`. No resume was generated or inferred.
+The named PDF is `docs/6659 - Priyanshu Anand - FirstAssignment - ProductEngineer.pdf`, following the source assignment naming convention. The source and `assignment-answers-draft.pdf` contain the same updated details. The supplied resume is included unchanged as `docs/6659 - Priyanshu Anand - Resume - ProductEngineer.pdf`. See `docs/assignment-cross-check.md` for requirement coverage and remaining limitations.
 
 ## Optional browser and PDF checks
 
