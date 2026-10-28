@@ -13,7 +13,7 @@ Checked on 28 October 2026 against `Assignment/Assignment I - Product Engineer.d
 | Assignment PDF filename | `6659 - Priyanshu Anand - FirstAssignment - ProductEngineer.pdf`, using the supplied phone's last four digits. |
 | Latest resume | Supplied as `1_whoami.pdf`. Checked the one-page PDF and its embedded contact links. Full name, phone, email and GitHub match the answer document. Copied without changing its content to `6659 - Priyanshu Anand - Resume - ProductEngineer.pdf`. LinkedIn is not listed in the resume; the answer uses the URL supplied directly by the user. |
 | Deadline | Specified in the covering email, which is not available here. Deadline compliance cannot be checked. |
-| Independent-work instruction | The source explicitly disallows AI assistance. The generated answer remains disclosed as an AI-assisted draft and cannot be certified as compliant with that instruction. |
+| Independent-work instruction | The source explicitly disallows AI assistance. AI assistance is recorded in the repository documentation. The PDF uses a plain assignment layout; this formatting change does not make the work compliant with the independent-work instruction. |
 | Confidentiality | The source states that the document is confidential. Public-repository publication was explicitly approved by the user earlier; that approval does not establish permission from the assignment issuer. |
 
 This is a document comparison, not a fresh website assessment. Website observations remain dated 27 October 2026. The source's suggested assessment time limits cannot be certified retrospectively. The newsletter application is an additional deliverable requested by the user; it is not a substitute for any of the written answers.
@@ -29,3 +29,7 @@ No resume content was rewritten. The submission copy is byte-for-byte identical 
 All six written sections are present, including the code-review bonus. Both required PDF files now exist with the prescribed names. Remaining limitations are the partial donation-flow inspection, independent-work and confidentiality requirements, the unavailable deadline, and inability to verify the original job-application entries. The app is an additional demo and is not required by the DOCX. It saves subscriptions but does not send newsletters.
 
 Both answer-PDF copies contain the corrected candidate details. The supplied resume is retained as a separate, correctly named submission PDF.
+
+## Formatting revision
+
+The answer PDF now uses a plain title, grayscale tables, consistent headings, and simple candidate-name page footers. Decorative headings and internal drafting notes were removed. The observations, technical answers, candidate details, and stated assessment limits remain intact. The resume remains unchanged. No software-origin or independent-authorship claim was added.

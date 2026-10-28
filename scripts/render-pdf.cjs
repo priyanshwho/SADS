@@ -1,6 +1,7 @@
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const { resolve } = require('node:path');
 const { pathToFileURL } = require('node:url');
+const { copyFileSync, mkdirSync } = require('node:fs');
 (async () => {
  const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH, args: ['--no-sandbox'] });
  try {
@@ -10,6 +11,8 @@ const { pathToFileURL } = require('node:url');
   const sizes = await page.locator('.page').evaluateAll(pages => pages.map(p=>({height:p.getBoundingClientRect().height,width:p.getBoundingClientRect().width})));
   if(sizes.some(s=>s.height>1005)) throw Error('Content exceeds the A4 page budget: '+JSON.stringify(sizes));
   await page.pdf({path:'docs/assignment-answers-draft.pdf',format:'A4',printBackground:true,preferCSSPageSize:true});
+  copyFileSync('docs/assignment-answers-draft.pdf', 'docs/6659 - Priyanshu Anand - FirstAssignment - ProductEngineer.pdf');
+  mkdirSync('artifacts', {recursive:true});
   for(let i=0;i<sizes.length;i++) await page.locator('.page').nth(i).screenshot({path:`artifacts/answers-page-${i+1}.png`});
   console.log(JSON.stringify({pages:sizes.length,sizes}));
  } finally {await browser.close();}
