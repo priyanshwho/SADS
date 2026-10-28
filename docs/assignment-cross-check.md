@@ -13,7 +13,7 @@ Checked on 28 October 2026 against `Assignment/Assignment I - Product Engineer.d
 | Assignment PDF filename | `6659 - Priyanshu Anand - FirstAssignment - ProductEngineer.pdf`, using the supplied phone's last four digits. |
 | Latest resume | Supplied as `1_whoami.pdf`. Checked the one-page PDF and its embedded contact links. Full name, phone, email and GitHub match the answer document. Copied without changing its content to `6659 - Priyanshu Anand - Resume - ProductEngineer.pdf`. LinkedIn is not listed in the resume; the answer uses the URL supplied directly by the user. |
 | Deadline | Specified in the covering email, which is not available here. Deadline compliance cannot be checked. |
-| Independent-work instruction | The source explicitly disallows AI assistance. AI assistance is recorded in the repository documentation. The PDF uses a plain assignment layout; this formatting change does not make the work compliant with the independent-work instruction. |
+| Independent-work instruction | The source explicitly disallows AI assistance. The generated answer remains disclosed as an AI-assisted draft and cannot be certified as compliant with that instruction. |
 | Confidentiality | The source states that the document is confidential. Public-repository publication was explicitly approved by the user earlier; that approval does not establish permission from the assignment issuer. |
 
 This is a document comparison, not a fresh website assessment. Website observations remain dated 27 October 2026. The source's suggested assessment time limits cannot be certified retrospectively. The newsletter application is an additional deliverable requested by the user; it is not a substitute for any of the written answers.
@@ -22,7 +22,7 @@ This is a document comparison, not a fresh website assessment. Website observati
 
 The resume identifies Priyanshu Anand, lists `priyanshu82711@gmail.com`, phone `+91-6205146659`, and GitHub `priyanshwho`. These match the corrected candidate table after normalizing phone punctuation. The resume lists full-stack experience, REST API integration, SQL databases, Git and deployment tools, which are relevant to the assignment's implementation and design topics. No work-history, project-impact, or usage claim was independently verified; these claims were not added to the assignment answers.
 
-No resume content was rewritten. The submission copy is byte-for-byte identical to the supplied PDF. The resume does not supply the covering-email deadline or establish what was entered in the original LinkedIn job application.
+No resume content was rewritten. The submission copy preserves the supplied page content and links. Optional PDF metadata was subsequently removed, so its file bytes differ from the attachment. The resume does not supply the covering-email deadline or establish what was entered in the original LinkedIn job application.
 
 ## Completion assessment
 
@@ -30,6 +30,6 @@ All six written sections are present, including the code-review bonus. Both requ
 
 Both answer-PDF copies contain the corrected candidate details. The supplied resume is retained as a separate, correctly named submission PDF.
 
-## Formatting revision
+## Metadata correction
 
-The answer PDF now uses a plain title, grayscale tables, consistent headings, and simple candidate-name page footers. Decorative headings and internal drafting notes were removed. The observations, technical answers, candidate details, and stated assessment limits remain intact. The resume remains unchanged. No software-origin or independent-authorship claim was added.
+The mistaken formatting revision was undone. The answer document again uses its previous layout and wording. Both submission PDFs now retain only a descriptive Title entry in the document information dictionary. Creator, Producer, creation and modification timestamps, and other optional document information fields were removed. No replacement software attribution was added. Neither original PDF contained a GPT label in its document information metadata. Page content and links were checked against the pre-edit PDFs.

@@ -45,7 +45,7 @@ This demo only saves signup data; it does not send mail. A production service ne
 - `docs/fundraisers-schema.sql` is the proposed database design, separate from the newsletter app.
 - `artifacts/` contains screenshots from UI checks and print-layout inspection.
 
-The named PDF is `docs/6659 - Priyanshu Anand - FirstAssignment - ProductEngineer.pdf`, following the source assignment naming convention. The source and `assignment-answers-draft.pdf` contain the same updated details. The supplied resume is included unchanged as `docs/6659 - Priyanshu Anand - Resume - ProductEngineer.pdf`. See `docs/assignment-cross-check.md` for requirement coverage and remaining limitations.
+The named PDF is `docs/6659 - Priyanshu Anand - FirstAssignment - ProductEngineer.pdf`, following the source assignment naming convention. The source and `assignment-answers-draft.pdf` contain the same updated details. The supplied resume, with its visible content preserved and optional PDF metadata removed, is included as `docs/6659 - Priyanshu Anand - Resume - ProductEngineer.pdf`. See `docs/assignment-cross-check.md` for requirement coverage and remaining limitations.
 
 ## Optional browser and PDF checks
 

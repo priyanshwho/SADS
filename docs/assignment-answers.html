@@ -1,10 +1,10 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><title>First assignment - Product Engineer - Priyanshu Anand</title>
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Product engineer assignment | Review draft</title>
 <style>
-@page{size:A4;margin:15mm}*{box-sizing:border-box}body{margin:0;width:180mm;color:#222222;background:white;font:9.5pt/1.45 Arial,sans-serif;print-color-adjust:exact;-webkit-print-color-adjust:exact}.page{break-after:page;min-height:250mm}.page:last-child{break-after:auto}h1{font-size:23pt;line-height:1.15;margin:4mm 0}h2{font-size:15pt;margin:7mm 0 3mm}h3{font-size:11pt;margin:4mm 0 2mm}p{margin:2mm 0 3mm}a{color:#222222;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#f1f1f1;padding:4mm;font:9pt/1.5 monospace}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:8.5pt}td,th{text-align:left;vertical-align:top;border-bottom:.5pt solid #d0d0d0;padding:2.2mm 2mm;overflow-wrap:anywhere}th{background:#f1f1f1}ol,ul{padding-left:5mm;margin:2mm 0}li{margin:2mm 0}.note{border-left:1pt solid #999999;background:#f5f5f5;padding:3mm 4mm;font-size:9pt}.meta{color:#555555;font-size:9pt}.footer{margin-top:6mm;border-top:.5pt solid #d0d0d0;padding-top:2mm;font-size:8pt;color:#555555}code{font-size:9pt}h2,h3{break-after:avoid}tr{break-inside:avoid}
+@page{size:A4;margin:15mm}*{box-sizing:border-box}body{margin:0;width:180mm;color:#30213e;background:white;font:9.5pt/1.45 Arial,sans-serif;print-color-adjust:exact;-webkit-print-color-adjust:exact}.page{break-after:page;min-height:250mm}.page:last-child{break-after:auto}h1{font-size:27pt;line-height:1.15;margin:4mm 0}h2{font-size:17pt;margin:7mm 0 3mm}h3{font-size:11pt;margin:4mm 0 2mm}p{margin:2mm 0 3mm}a{color:#4b3864;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#eee9fa;padding:4mm;font:9pt/1.5 monospace}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:8.5pt}td,th{text-align:left;vertical-align:top;border-bottom:.5pt solid #ddd7e4;padding:2.2mm 2mm;overflow-wrap:anywhere}th{background:#eee9fa}ol,ul{padding-left:5mm;margin:2mm 0}li{margin:2mm 0}.note{border-left:2pt solid #6c5189;background:#f4f1fa;padding:3mm 4mm;font-size:9pt}.meta{color:#6e6575;font-size:9pt}.footer{margin-top:6mm;border-top:.5pt solid #ddd7e4;padding-top:2mm;font-size:8pt;color:#6e6575}code{font-size:9pt}h2,h3{break-after:avoid}tr{break-inside:avoid}
 </style>
 <section class="page">
-<h1>First assignment</h1><p class="meta">Product Engineer<br>Priyanshu Anand</p>
-
+<p class="meta">First assignment / Product engineer / 27 October 2026</p><h1>Product thinking,<br>made concrete.</h1>
+<p class="note">AI-assisted review draft. The source assignment requests independent work without AI assistance. This document is not represented as independently authored or ready for submission.</p>
 <h2>1. Candidate details</h2><table><tr><th style="width:30%">Field</th><th>Details</th></tr>
 <tr><td>Name</td><td>Priyanshu Anand</td></tr>
 <tr><td>Phone</td><td>+91 6205146659</td></tr>
@@ -15,10 +15,10 @@
 
 Check is_int before multiplying. Preserve multiplication for
 integer inputs and return -1 for other input types.</pre>
-<h3>Concerns and alternative</h3><p>The function now rejects numeric strings and floats that previously could be multiplied. That is a behavior change for existing callers. The meaning of <code>-1</code> must also be documented and checked by every caller.</p><p>I would first confirm which input types the function should accept. If only integers are valid, I would prefer an integer parameter and strict typing at the caller, or explicit validation that throws <code>InvalidArgumentException</code>. This makes misuse visible instead of returning an ordinary integer sentinel.</p><p>The guard does not prevent overflow. A large integer multiplied by five can become a float, conflicting with the integer return type. I would validate the supported range and test zero, negatives, numeric strings, floats, null, and integer limits.</p>
+<h3>Concerns and alternative</h3><p>The function now rejects numeric strings and floats that previously could be multiplied. That is a behavior change for existing callers. The meaning of <code>-1</code> must also be documented and checked by every caller.</p><p>I would first agree the input contract. If only integers are valid, I would prefer an integer parameter and strict typing at the caller, or explicit validation that throws <code>InvalidArgumentException</code>. This makes misuse visible instead of returning an ordinary integer sentinel.</p><p>The guard does not prevent overflow. A large integer multiplied by five can become a float, conflicting with the integer return type. I would validate the supported range and test zero, negatives, numeric strings, floats, null, and integer limits.</p>
 <p class="footer">1 / 4 · Priyanshu Anand</p>
 </section>
-<section class="page"><h2>3. Task approach</h2>
+<section class="page"><p class="meta">Newsletter signup / Requirements before delivery</p><h2>3. Task approach</h2>
 <ol><li><strong>Clarify the outcome.</strong> Ask Sales who should subscribe, why they would want the newsletter, where traffic comes from, and how Sales will judge success. Define a completed signup before choosing a metric.</li>
 <li><strong>Agree the minimum scope.</strong> Confirm required fields, content, frequency, consent wording, confirmation behavior, brand assets, deadline, and the person who approves the page.</li>
 <li><strong>Check the existing systems.</strong> Identify the website, email platform or CRM, owner of the mailing list, and available integration. Confirm duplicate, unsubscribe, and data-deletion behavior.</li>
@@ -31,8 +31,8 @@ integer inputs and return -1 for other input types.</pre>
 <p>Hi team,</p><p>I can start the newsletter signup page. To make the first version useful, could you help me confirm:</p>
 <ul><li>Who is the audience, what will subscribers receive, and how often?</li><li>Where will visitors find the page, and what result should we measure?</li><li>Which fields do you need beyond email? Please share approved copy, brand assets, and an example if you have one.</li><li>Which email platform or CRM should receive signups, and who can help with access and testing?</li><li>Should signup require email confirmation? Who approves consent, privacy, and unsubscribe wording?</li><li>What is the target launch date, and who gives final approval?</li></ul>
 <p>Could we have a 15-minute discussion tomorrow, or could you reply by tomorrow afternoon? Once we confirm the scope and integration, I will share a short implementation plan and delivery estimate. My proposed first version is an email field, explicit consent, clear validation, and a confirmation state.</p><p>Thanks,<br>Priyanshu Anand</p>
-<p class="footer">2 / 4 · Priyanshu Anand</p></section>
-<section class="page"><h2>5. UI and UX assessment</h2>
+<p class="footer">2 / 4 · Draft communication only. No email has been sent.</p></section>
+<section class="page"><p class="meta">Browser assessment / Share At Door Step</p><h2>5. UI and UX assessment</h2>
 <p>Reviewed <a href="https://shareatdoorstep.com/donate/">shareatdoorstep.com/donate/</a> on 27 October 2026 in a desktop browser. Used the public Indiranagar, Bengaluru locality, selected Light Pickup, added one clothing item, and inspected scheduling. No donor identity, OTP, order, or payment was submitted.</p>
 <table><tr><th style="width:5%">#</th><th style="width:23%">Summary</th><th style="width:59%">Description</th><th style="width:13%">Type</th></tr>
 <tr><td>1</td><td>Clear process outline</td><td>The five named steps show service selection, donation details, scheduling, verification, and placing an order. This helps donors anticipate the work.</td><td>Good</td></tr>
@@ -44,11 +44,11 @@ integer inputs and return -1 for other input types.</pre>
 <tr><td>7</td><td>Support links need accessible names</td><td>The phone and WhatsApp links appear as icon glyphs in the accessibility tree. Give each a meaningful accessible name such as “Call support”.</td><td>Bad</td></tr>
 <tr><td>8</td><td>Precise map confirmation</td><td>After selecting a locality, donors are asked to verify the pin before seeing services. This can improve routing, but a locality or postcode coverage check first would reduce initial effort.</td><td>Neutral</td></tr></table>
 <h3>Suggested priority</h3><p>First disclose the likely pickup cost and provide persistent labels. Then improve support-link names and let donors explore service availability before confirming an exact pickup point.</p>
-<p class="note">I reviewed the flow up to scheduling. Scheduling displayed dated time slots, an optional pickup note, donor details, terms, and a tax-inclusive fee summary. Donor verification was not completed. No conclusions are made about checkout completion, delivery reliability, mobile behavior, or payment success.</p>
-<p class="footer">3 / 4 · Priyanshu Anand</p></section>
-<section class="page"><h2>6. Fundraiser listing schema</h2>
+<p class="note">Scope limit: this is a partial flow assessment. Scheduling displayed dated time slots, an optional pickup note, donor details, terms, and a tax-inclusive fee summary. Donor verification was not completed. No conclusions are made about checkout completion, delivery reliability, mobile behavior, or payment success.</p>
+<p class="footer">3 / 4 · Observations are session-specific. Suggestions are proposals, not existing behavior.</p></section>
+<section class="page"><p class="meta">Backend design / Proposed relational model</p><h2>6. Fundraiser listing schema</h2>
 <p>Reviewed <a href="https://milaap.org/crowdfunding/fundraisers">milaap.org/crowdfunding/fundraisers</a> and Refine Search on 27 October 2026. Cards show an image, title, percentage funded, amount raised, creator, and a fundraiser URL. Filters include cause categories, tax benefits, urgency, and donation matching.</p>
-<p class="note">This is a proposed schema inferred from the public interface. The actual database structure is not public.</p>
+<p class="note">This is a proposed schema inferred from the public interface. It is not a claim about Milaap's internal database.</p>
 <table><tr><th style="width:23%">Table</th><th style="width:54%">Key fields</th><th style="width:23%">Purpose</th></tr>
 <tr><td>users</td><td>id PK, display_name, created_at</td><td>Fundraiser creator.</td></tr>
 <tr><td>fundraisers</td><td>id PK, creator_id FK, slug UNIQUE, title, story, goal_minor, currency, status, is_urgent, tax_benefit_eligible, matching_enabled, published_at</td><td>Campaign content and listing filters.</td></tr>
@@ -60,4 +60,4 @@ integer inputs and return -1 for other input types.</pre>
 <p>Calculate amount raised from captured donations minus refunds. Failed or pending payments do not count. Percentage funded is raised divided by goal, multiplied by 100. Permit overfunding in the stored value; the progress-bar width can be capped separately.</p>
 <p>The browser displayed dollar amounts during this session. Currency display may differ from a campaign's settlement currency. Conversion needs an explicit exchange-rate source and timestamp. Never add mixed currencies directly.</p>
 <h3>Listing performance</h3><p>Index published status and publication date with id as a tie-breaker. Use category join indexes and keyset pagination. A listing aggregate can cache raised totals if it is updated idempotently from verified payment events and reconciled with the ledger. Keep private donor information out of listing responses.</p>
-<p class="footer">4 / 4 · Priyanshu Anand</p></section></html>
+<p class="footer">4 / 4 · Executable SQLite proposal: docs/fundraisers-schema.sql. The newsletter app is an additional scoped demonstration, not an implementation of Milaap.</p></section></html>
